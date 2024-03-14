@@ -1,13 +1,48 @@
 {
+  "name": "famcastblog",
+  "description": "Best Online Radio, webradio, internet radio & Audio Streaming",
+  "version": "2.0.0",
+  "author": "Thabo Mokhutsoane <thabo@famgroup.co.za>",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3099",
     "build": "next build",
-    "start": "next start"
+    "postbuild": "next-sitemap",
+    "start": "next start -p 3080",
+    "export": "next build && next export"
   },
   "dependencies": {
+    "@n8tb1t/use-scroll-position": "^2.0.3",
+    "aos": "latest",
+    "apisauce": "^3.0.0",
+    "bootstrap": "latest",
+    "date-fns": "latest",
+    "focus-trap-react": "latest",
+    "formik": "^2.2.9",
+    "google-map-react": "latest",
+    "moment": "^2.29.4",
     "next": "latest",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "next-fonts": "^1.5.1",
+    "next-share": "^0.20.0",
+    "next-sitemap": "^4.0.6",
+    "polished": "latest",
+    "react": "latest",
+    "react-bootstrap": "latest",
+    "react-dom": "^18.2.0",
+    "react-google-recaptcha": "^2.1.0",
+    "react-howler": "^5.2.0",
+    "react-icons": "^4.8.0",
+    "react-player": "^2.12.0",
+    "react-select": "^5.7.2",
+    "react-slick": "^0.29.0",
+    "sass": "latest",
+    "slick-carousel": "latest",
+    "styled-components": "latest",
+    "styled-system": "latest",
+    "yup": "^1.0.2"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^2.1.4",
+    "typescript": "5.4.2"
   }
 }

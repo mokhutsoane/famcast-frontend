@@ -1,0 +1,21 @@
+# *
+User-agent: *
+Allow: /
+
+# test-bot
+User-agent: test-bot
+Allow: /radio-mobile-apps
+Allow: /blog
+
+# black-listed-bot
+User-agent: black-listed-bot
+Disallow: /api/
+Disallow: /payfast/
+Disallow: *.php$
+
+# Host
+Host: https://famcast.co.za/q/
+
+# Sitemaps
+Sitemap: https://famcast.co.za/q/sitemap.xml
+Sitemap: https://www.famcast.co.za/home/sitemap.xml
